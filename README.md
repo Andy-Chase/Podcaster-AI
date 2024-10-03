@@ -2,18 +2,6 @@
 
 An AI-powered tool to generate simulated podcast conversations between custom characters on any topic, inspired by Google's Notebook LM.
 
-## Table of Contents
-
-- [Introduction](https://www.notion.so/Code-Development-2f7d621f57eb417687c93e4c24352818?pvs=21)
-- [Features](https://www.notion.so/Code-Development-2f7d621f57eb417687c93e4c24352818?pvs=21)
-- [Inspiration](https://www.notion.so/Code-Development-2f7d621f57eb417687c93e4c24352818?pvs=21)
-- [Demo](https://www.notion.so/Code-Development-2f7d621f57eb417687c93e4c24352818?pvs=21)
-- [Installation](https://www.notion.so/Code-Development-2f7d621f57eb417687c93e4c24352818?pvs=21)
-- [Usage](https://www.notion.so/Code-Development-2f7d621f57eb417687c93e4c24352818?pvs=21)
-- [Configuration](https://www.notion.so/Code-Development-2f7d621f57eb417687c93e4c24352818?pvs=21)
-- [Acknowledgments](https://www.notion.so/Code-Development-2f7d621f57eb417687c93e4c24352818?pvs=21)
-- [License](https://www.notion.so/Code-Development-2f7d621f57eb417687c93e4c24352818?pvs=21)
-
 ## Introduction
 
 The Dynamic Podcast Conversation Simulator is a Streamlit application that allows users to create simulated podcast conversations between multiple characters. Users can define custom characters, assign them distinct personalities, and generate engaging dialogues on any chosen topic. The app leverages OpenAI's language models to produce natural and dynamic conversations and uses Text-to-Speech (TTS) services to convert the dialogue into audio.
