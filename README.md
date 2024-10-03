@@ -52,9 +52,7 @@ cd dynamic-podcast-conversation-simulator
 
 ### Create a Virtual Environment (Optional but Recommended)
 
-```bash
-bash
-Copy code
+```
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
@@ -62,9 +60,7 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 ### Install Dependencies
 
-```bash
-bash
-Copy code
+```
 pip install -r requirements.txt
 
 ```
