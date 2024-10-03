@@ -1,3 +1,5 @@
+![PodcasterAIBanner](https://github.com/user-attachments/assets/a534067f-2593-400a-8446-50eea433311a)
+
 # 🎙️ Dynamic Podcast Conversation Simulator
 
 An AI-powered tool to generate simulated podcast conversations between custom characters on any topic, inspired by Google's Notebook LM.
