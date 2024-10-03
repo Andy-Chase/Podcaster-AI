@@ -42,9 +42,7 @@ While Notebook LM focuses on research and note-taking, this project extends the 
 
 ### Clone the Repository
 
-```bash
-bash
-Copy code
+```
 git clone https://github.com/yourusername/dynamic-podcast-conversation-simulator.git
 cd dynamic-podcast-conversation-simulator
 
@@ -82,9 +80,7 @@ By default this app utilises the OpenAI API for Speech-to-Text (STT), Chat Compl
 
 Create a `.env` file in the project root directory and add your API keys:
 
-```bash
-bash
-Copy code
+```
 OPENAI_API_KEY=your_openai_api_key_here
 
 ```
@@ -95,9 +91,7 @@ OPENAI_API_KEY=your_openai_api_key_here
 
 ### Run the App
 
-```bash
-bash
-Copy code
+```
 streamlit run app.py
 
 ```
