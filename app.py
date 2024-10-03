@@ -277,9 +277,7 @@ def main():
 
     st.sidebar.markdown("""
     **Note**:
-    - Ensure that your st.secrets or .env file contains the necessary API keys.
-    - To add new characters, add their fields to the `Charactors` class in the `app.py` file.
-    - The TTS function currently uses OpenAI's hypothetical TTS service. Replace the `create_audio` function with your actual TTS API implementation.
+    - Ensure that your st.secrets or .env file contains your OpenAI API key.
     """)
 
 if __name__ == "__main__":
