@@ -73,10 +73,12 @@ pip install -r requirements.txt
 
 The app requires access to the OpenAI API and a Text-to-Speech (TTS) service API.
 
+By default this app utilises the OpenAI API for Speech-to-Text (STT), Chat Completions text response and Text-to-Speech (TTS).
+
 1. **OpenAI API Key**:
     - Sign up at [OpenAI](https://openai.com/) and obtain an API key.
     - Ensure you have access to the necessary models (e.g., GPT-4).
-2. **Text-to-Speech Service API Key**:
+2. **Option: -- Text-to-Speech Service API Key**:
     - Choose a TTS service provider (e.g., Google Cloud TTS, Amazon Polly, Azure TTS).
     - Obtain an API key and set up authentication as per the provider's instructions.
 
@@ -125,72 +127,6 @@ streamlit run app.py
     - Listen to the generated podcast directly in the app.
     - Download the MP3 file for offline use.
 
-## Configuration
-
-### Updating the Text-to-Speech Function
-
-The `create_audio` function in `app.py` is currently a placeholder using a hypothetical OpenAI TTS service. You need to replace it with actual API calls to your chosen TTS service.
-
-### Example with Google Cloud TTS
-
-1. **Install the Client Library**:
-
-```bash
-bash
-Copy code
-pip install --upgrade google-cloud-texttospeech
-
-```
-
-1. **Update the `create_audio` Function**:
-
-```python
-python
-Copy code
-from google.cloud import texttospeech
-
-def create_audio(input_text, output_filename, voice):
-    client = texttospeech.TextToSpeechClient()
-
-    synthesis_input = texttospeech.SynthesisInput(text=input_text)
-
-    # Select the voice parameters
-    voice_params = texttospeech.VoiceSelectionParams(
-        language_code="en-US",
-        name=voice  # Map your voice selection appropriately
-    )
-
-    # Set the audio configuration
-    audio_config = texttospeech.AudioConfig(
-        audio_encoding=texttospeech.AudioEncoding.MP3
-    )
-
-    # Perform the text-to-speech request
-    response = client.synthesize_speech(
-        input=synthesis_input,
-        voice=voice_params,
-        audio_config=audio_config
-    )
-
-    # Write the response to the output file
-    with open(output_filename, "wb") as out:
-        out.write(response.audio_content)
-
-```
-
-1. **Authentication**:
-    - Set up authentication by creating a service account key and setting the `GOOGLE_APPLICATION_CREDENTIALS` environment variable.
-
-### Adjusting Voice Options
-
-Update the `available_voices` list with the voices supported by your TTS service. Ensure that the voice names match those required by the API.
-
-```python
-python
-Copy code
-available_voices = ['en-US-Wavenet-D', 'en-US-Wavenet-F', 'en-GB-Wavenet-A']  # Example voices
-
-```
 
 ## Acknowledgments
 
