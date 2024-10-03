@@ -88,7 +88,6 @@ Create a `.env` file in the project root directory and add your API keys:
 bash
 Copy code
 OPENAI_API_KEY=your_openai_api_key_here
-TTS_API_KEY=your_tts_api_key_here  # If applicable
 
 ```
 
